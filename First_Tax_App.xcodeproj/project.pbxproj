@@ -194,10 +194,9 @@
 			};
 			buildConfigurationList = 5A72EF59C1B75BEE209B00F9 /* Build configuration list for PBXProject "First_Tax_App" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				English,
 				en,
 				Base,
 			);

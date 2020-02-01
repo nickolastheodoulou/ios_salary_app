@@ -15,16 +15,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Price" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="k9z-kb-ZVF">
-                                <rect key="frame" x="45" y="313" width="323" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aWs-qg-juG">
-                                <rect key="frame" x="45" y="512" width="323" height="28"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aWs-qg-juG">
+                                <rect key="frame" x="158" y="427.5" width="98" height="41"/>
                                 <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <state key="normal" title="Calculate">
@@ -34,26 +26,40 @@
                                     <action selector="calculateTotalPrice:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Yv0-9h-Cou"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Sales Tax" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jYY-1H-6qo">
-                                <rect key="frame" x="45" y="369" width="323" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Sales Tax" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jYY-1H-6qo">
+                                <rect key="frame" x="162.5" y="363.5" width="89" height="34"/>
                                 <color key="backgroundColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="£2.99" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FZS-XO-O0M">
-                                <rect key="frame" x="159" y="185" width="96" height="46"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="£20000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FZS-XO-O0M">
+                                <rect key="frame" x="176" y="239" width="62" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Salary" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3HQ-3r-ewq">
+                                <rect key="frame" x="173" y="309.5" width="68" height="34"/>
+                                <color key="backgroundColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="aWs-qg-juG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5Mi-BA-Gyy"/>
+                            <constraint firstItem="jYY-1H-6qo" firstAttribute="top" secondItem="3HQ-3r-ewq" secondAttribute="bottom" constant="20" id="83H-m1-QZq"/>
+                            <constraint firstItem="aWs-qg-juG" firstAttribute="top" secondItem="jYY-1H-6qo" secondAttribute="bottom" constant="30" id="9ju-Kk-SoY"/>
+                            <constraint firstItem="FZS-XO-O0M" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="e6v-Xx-sty"/>
+                            <constraint firstItem="jYY-1H-6qo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fgg-jA-4bq"/>
+                            <constraint firstItem="3HQ-3r-ewq" firstAttribute="top" secondItem="FZS-XO-O0M" secondAttribute="bottom" constant="50" id="glO-iR-8Qt"/>
+                            <constraint firstItem="3HQ-3r-ewq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rPh-WA-9pi"/>
+                            <constraint firstItem="aWs-qg-juG" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="wfQ-DX-d3a"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="priceTxt" destination="k9z-kb-ZVF" id="QPB-jS-R6b"/>
+                        <outlet property="SalaryTxt" destination="3HQ-3r-ewq" id="gOM-uN-MAN"/>
                         <outlet property="salesTaxTxt" destination="jYY-1H-6qo" id="7UW-ff-pdu"/>
                         <outlet property="totalPriceLbl" destination="FZS-XO-O0M" id="txW-tY-mCo"/>
                     </connections>

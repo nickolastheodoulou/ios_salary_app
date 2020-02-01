@@ -11,20 +11,20 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var totalPriceLbl: UILabel!
-    @IBOutlet weak var priceTxt: UITextField!
+    @IBOutlet weak var SalaryTxt: UITextField!
     @IBOutlet weak var salesTaxTxt: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
-        totalPriceLbl.text = "£0.99"
+        totalPriceLbl.text = "£20,000"
         // Do any additional setup after loading the view.
     }
     
     @IBAction func calculateTotalPrice(_ sender: Any) {
-        let price = Double(priceTxt.text!)!
+        let salary = Double(SalaryTxt.text!)!
         let salesTax = Double(salesTaxTxt.text!)!
 
-        let totalSalesTax = price * salesTax
-        let totalPrice = price + totalSalesTax
+        let totalSalesTax = salary * salesTax
+        let totalPrice = salary + totalSalesTax
         totalPriceLbl.text = "£\(totalPrice)"
     }
 
